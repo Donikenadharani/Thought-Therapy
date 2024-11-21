@@ -1,0 +1,226 @@
+/*Dashboard*/
+
+.main {
+  display: flex;
+}
+
+.dashboard-container {
+  align-items: center;
+  width: auto;
+  margin-left: 260px;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7px;
+}
+
+.welcome-message {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  background-image: url("C:\Users\DHARANI\OneDrive\Desktop\Project\thought-therapy-main\thought-therapy-main\application\src\assets\program_page_title.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.sidebar {
+  position: fixed;
+  color: aliceblue;
+  width: 260px;
+  flex-shrink: 0;
+  background: linear-gradient(to bottom, #1e1d1d, #444343df);
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar-item {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.15s;
+}C
+
+.sidebar-title {
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: block;
+  padding: 0.5em;
+}
+
+.sidebar-title:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* Added styles for dashboard-container sections */
+
+.dashboard-container section {
+  margin-right: 5px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.no-program-message {
+  padding: 20px;
+  width: fit-content;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#depression-section,
+#anxiety-section,
+#stress-section {
+  margin-bottom: 30px;
+}
+
+.program-link:hover {
+  transform: scale(1.05);
+}
+
+.program-link {
+  background-color: #535353; /* Update to the button background color you want */
+  color: white; /* Change the button font color to white */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.task-section:hover {
+  /* border: 3px outset #3d3c3c6f; */
+  background-color: #76777c1f;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.task-section {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+  width: 95%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.task-title {
+  font-size: larger;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.task-description div {
+  display: flex;
+  align-items: center;
+}
+
+.task-description {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25em;
+  padding-left: 5vh;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  align-items: center;
+}
+
+.task-description p {
+  max-width: 110vh;
+}
+
+.task-description.expanded {
+  height: auto;
+}
+
+.task-section.expanded {
+  margin-top: 15px;
+  border-left: 6px solid #3d3c3cbd;
+  transform: scale(1.01);
+  transition: tra0.3s;
+}
+
+.quoted-disc {
+  margin-bottom: 10vh;
+  max-width: 90vh;
+}
+
+.quote {
+  margin-bottom: 40px;
+}
+
+.quote-right {
+  transform: rotateY(180deg);
+}
+
+.mark-button {
+  background-color: #535353; /* Update to the button background color you want */
+  color: white; /* Change the button font color to white */
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.mark-button:hover {
+  transform: scale(1.02);
+  background-color: #3f3f3f;
+}
+
+.bi-check-circle-fill.done {
+  color: greenyellow;
+  font-size: 20px;
+}
+
+.bi-check-circle-fill {
+  color: rgba(172, 255, 47, 0);
+  font-size: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 22vh; /* Adjust width as needed (5 times the image width) */
+  height: auto; /* Automatically adjust height */
+  margin: 30px; /* Center align */
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px; /* Rounded corners for the cuboid effect */
+  position: relative; /* Position the image relatively */
+  z-index: 1; /* Ensure the image is on top of the background */
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  width: 100%; /* 5 times the image width */
+  height: 100%; /* 5 times the image height */
+  background-color: #393938; /* Background color */
+  z-index: -1; /* Place the background behind the image */
+  border-radius: 20px; /* Rounded corners for the background */
+}

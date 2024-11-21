@@ -1,0 +1,94 @@
+/* Header.css */
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #1e1d1d, #444343df);
+  padding: 5px;
+  padding-right: 15px;
+  color: white;
+  width: 100%;
+  z-index: 1001;
+}
+
+.login-signup {
+  margin-right: 30px;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+.title {
+  margin-left: 15px;
+}
+
+.h-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.h-button:hover {
+  transform: scale(1.05);
+}
+
+.h-button {
+  background-color: #535353; /* Update to the button background color you want */
+  color: white; /* Change the button font color to white */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.logout-button {
+  background-color: #7e1f1f; /* Update to the button background color you want */
+  color: white; /* Change the button font color to white */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.logout-button:hover {
+  transform: scale(1.05);
+}
+
+.h-button.active,
+.h-button.active,
+.menu-button.active {
+  background-color: #323131; /* Update to the active button background color you want */
+}
+
+.menu-button {
+  background-color: #535353; /* Update to the button background color you want */
+  color: white; /* Change the button font color to white */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.menu-button:hover {
+  transform: scale(1.05);
+}
+
+.navigate {
+  margin-left: 5px; /* Adjust the margin as needed */
+}
